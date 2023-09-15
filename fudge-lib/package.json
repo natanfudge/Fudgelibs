@@ -11,14 +11,18 @@
     "uploadNoBump": "npm run build & npm publish"
   },
   "eslintConfig": ".eslintrc.json",
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "dayjs": "^1.11.9",
+    "fflate": "^0.8.0"
+  },
   "devDependencies": {
-    "eslint-config-standards-style": "latest",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^3.1.0",
     "@vitejs/plugin-react-swc": "^3.1.0",
     "@vitest/ui": "^0.28.4",
+    "eslint-config-standards-style": "latest",
     "node-fetch": "^3.3.0",
     "rollup-plugin-ignore": "^1.0.10",
     "source-map-explorer": "^2.5.3",
