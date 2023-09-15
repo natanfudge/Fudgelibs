@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_Modules/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+lib/
+.gradle/
+aws/generated
+build/
+server/src/main/resources/secrets/*
+server/src/test/resources/secrets/*
+server/FirestoreMigration/*
+server/FirestoreMigrationRelease/*
+server/FirestoreMigrationReleaseFinal/*
+server/S3Export/*
+server/http_cache/*
+dist/
+*.dll
