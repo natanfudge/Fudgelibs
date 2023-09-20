@@ -1,34 +1,35 @@
 {
   "name": "fudge-lib",
   "private": false,
-  "version": "1.1.1",
+  "version": "2.0.5",
   "type": "module",
-  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "buildVite": "vite build",
+    "build": "cleanbuild.bat && tsc && copycss.bat",
     "test": "vitest --ui",
     "upload": "npm run build && npm version patch & npm publish",
     "uploadNoBump": "npm run build & npm publish"
   },
   "eslintConfig": ".eslintrc.json",
   "dependencies": {
-    "@emotion/styled": "^11.11.0",
-    "dayjs": "^1.11.9",
-    "fflate": "^0.8.0"
+    "dayjs": "^1.11.10",
+    "fflate": "^0.8.1",
+    "vite-plugin-dts": "^3.5.3"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
+    "@types/css-modules": "^1.0.3",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^3.1.0",
-    "@vitejs/plugin-react-swc": "^3.1.0",
-    "@vitest/ui": "^0.28.4",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitest/ui": "^0.34.4",
     "eslint-config-standards-style": "latest",
-    "node-fetch": "^3.3.0",
+    "node-fetch": "^3.3.2",
     "rollup-plugin-ignore": "^1.0.10",
     "source-map-explorer": "^2.5.3",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0",
-    "vitest": "^0.28.4"
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4"
   },
   "files": [
     "dist/**/**"

@@ -22,7 +22,7 @@ export function hashCodeOfAnything<T>(thing: unknown): number {
 
 
 // Taken from the JDK Arrays.hashCode() implementation
-export function hashArray(arr: unknown[]): number {
+ function hashArray(arr: unknown[]): number {
     let result = 1;
     for (const element of arr) {
         result = 31 * result + hashCodeOfAnything(element);
@@ -41,7 +41,7 @@ function hashObject(obj: TsObject | null): number {
     }
 }
 
-export function hashString(str: string): number {
+ function hashString(str: string): number {
     return cyrb53(str);
 }
 
