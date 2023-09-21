@@ -1,8 +1,10 @@
 {
   "name": "fudge-lib",
   "private": false,
-  "version": "2.0.5",
+  "version": "2.0.8",
   "type": "module",
+  "main" :  "src/react/Styles.ts",
+  "module": "src/react/Styles.ts",
   "scripts": {
     "buildVite": "vite build",
     "build": "cleanbuild.bat && tsc && copycss.bat",

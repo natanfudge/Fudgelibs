@@ -30,6 +30,7 @@ export function defaultJsonSerializer<T>(): JsonSerializer<T> {
 
 // Detects this as an example: 2023-09-15T13:07:11.913Z
 function isIsoString(string: string): boolean {
+    if (string.length !== 24) return false
     for (let i = 0; i < string.length; i++) {
         const char = string[i]
         // This is faster than it looks because it usually exits at the first branch
